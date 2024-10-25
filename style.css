@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "PT Serif", serif;
+    
+}
+header {
+    padding: min(3vh, 30rem);
+    background-color: rgb(35, 35, 35);
+    color: rgb(131, 128, 128);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-weight: 30;
+    font-size: 1em;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+header i{
+    font-size: 30px;
+}
+header ul{
+    display: flex;
+    gap: 20px;
+}
+.section1{
+    padding: min(20vh, 40rem);
+    background-color: rgb(27, 27, 27);
+    color: gray;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 900;
+}
+.section2{
+    padding: min(20vh, 40rem);
+    background-color: rgb(27, 27, 27);
+    color: gray;
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+}
+.span2{
+    color: rgb(255, 0, 76);
+}
+.section3{
+    padding: min(20vh, 40rem);
+    background: linear-gradient(180deg, #00000064 8.33%, rgba(0, 0, 0, 0.745) 100%), url(img/technology-8779250_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 900    ;
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+}
+.section3 h2{
+    color: rgb(255, 0, 76);
+    margin-bottom: 30px;
+}
+footer{
+    padding: min(5vh,30rem);
+    background-color: rgb(55, 55, 55);
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    border: 4px black;
+    margin-right: 30px;
+    border-radius: 30px;
+}
+.icons i{
+    margin-right: 30px;
+}
