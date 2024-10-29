@@ -1,7 +1,7 @@
 function trocaCor(){
-    if (document.section.style.backgroundColor === "rgb(27, 27, 27)"){
-    document.section.style.backgroundColor = "white";
-    document.section.style.color = "black";
+    if (document.body.style.backgroundColor === "rgb(27, 27, 27)"){
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
     
     document.getElementById("toggleButton").textContent = "Modo Escuro";
     
