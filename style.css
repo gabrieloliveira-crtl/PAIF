@@ -1,15 +1,17 @@
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: "PT Serif", serif;
-    
+    font-family: "PT Serif", serif;    
 }
+ 
 header {
     padding: min(3vh, 30rem);
-    background-color: rgb(27,27,27);
+    background-color: rgb(27, 27, 27);
     color: rgb(131, 128, 128);
     display: flex;
     justify-content: space-around;
@@ -22,28 +24,33 @@ header {
     top: 0;
     z-index: 999;
 }
-header i{
+
+header i {
     font-size: 30px;
 }
-header ul{
+
+header ul {
     display: flex;
     gap: 20px;
+    transition: background-color 0.5s, color 0.5s;
 }
-body{
-    text-align: center;
-    transition: background-color 0.5s, color 0.5s;/* transiçao suave de cor de fundo e texto */
-    background-color: rgb(27, 27, 27);
 
+body {
+    text-align: center;
+    transition: background-color 0.5s, color 0.5s; /* transição suave de cor de fundo e texto */
+    background-color: rgb(27, 27, 27);
 }
-#toggleButton{
+
+#toggleButton {
     padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.5s;/* transiçao suave para a cor do botão */
+    transition: background-color 0.5s; /* transição suave para a cor do botão */
 }
-.section1{
+
+.section1 {
     padding: min(20vh, 40rem);
     background-color: rgb(27, 27, 27);
     color: gray;
@@ -51,7 +58,8 @@ body{
     text-align: center;
     font-weight: 900;
 }
-.section2{
+
+.section2 {
     padding: min(20vh, 40rem);
     background-color: rgb(27, 27, 27);
     color: gray;
@@ -59,37 +67,53 @@ body{
     text-align: center;
     font-weight: lighter;
 }
-.span2{
+
+.span2 {
     color: rgb(255, 0, 76);
 }
-.section3{
+
+.section3 {
     padding: min(20vh, 40rem);
     background: linear-gradient(180deg, #00000064 8.33%, rgba(0, 0, 0, 0.745) 100%), url(img/technology-8779250_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-weight: 900    ;
+    font-weight: 900;
     color: gray;
     font-size: 30px;
     text-align: center;
     font-weight: lighter;
 }
-.section3 h2{
+
+.section3 h2 {
     color: rgb(255, 0, 76);
     margin-bottom: 30px;
 }
-footer{
-    padding: min(5vh,30rem);
+
+footer {
+    padding: min(5vh, 30rem);
     background-color: rgb(55, 55, 55);
     font-size: 30px;
     display: flex;
     justify-content: space-between;
+    transition: background-color 0.5s, color 0.5s;
 }
-.icons{
-    border: 4px black;
+
+
+.icons i {
     margin-right: 30px;
-    border-radius: 30px;
 }
-.icons i{
-    margin-right: 30px;
+
+/* Estilos para o modo escuro */
+.modo-escuro {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.modo-escuro header, .modo-escuro footer {
+    background-color: #ffffff; /* A cor que você escolher */
+}
+
+.modo-escuro .icons i {
+    color: #b0b0b0;
 }
